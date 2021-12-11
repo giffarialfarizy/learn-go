@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 func main() {
@@ -87,6 +88,13 @@ func main() {
 	fmt.Println(iniArray)
 	fmt.Println(iniSlice)
 
+	// Cari tipe data
+	fmt.Println(reflect.TypeOf(iniArray))
+	fmt.Println(reflect.TypeOf(iniSlice))
+
+	// Coba test untuk number
+	angka := 1
+	fmt.Println(reflect.TypeOf(angka))
 }
 
 // go build 14_tipe-data-slice.go
