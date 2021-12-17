@@ -28,6 +28,7 @@ func main() {
 	registerUser("admin", blacklist)
 	registerUser("eko", blacklist)
 
+	// Ini nih intinya
 	registerUser("root", func(name string) bool {
 		return name == "root"
 	})
